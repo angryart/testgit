@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网格编程测试1</title>
+</head>
+<body>
+
+<style>
+    .main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+        background-color: #0e90d2;
+    }
+    .one {
+        grid-column: 1 / 3;
+        grid-row: 1;
+        background-color: #0e0e0e;
+    }
+    .two {
+        grid-column: 2 / 4;
+        grid-row: 1 / 3;
+        background-color: #002a80;
+    }
+    .three {
+        grid-row: 2 / 5;
+        grid-column: 1;
+        background-color: #5bb75b;
+    }
+    .four {
+        grid-column: 3;
+        grid-row: 3;
+        background-color: #8a4182;
+    }
+    .five {
+        grid-column: 2;
+        grid-row: 4;
+        background-color: #4183c4;
+    }
+    .six {
+        grid-column: 3;
+        grid-row: 4;
+        background-color: #df8505;
+    }
+</style>
+<div class="main">
+    <div class="one">one</div>
+    <div class="two">two</div>
+    <div class="three">three</div>
+    <div class="four">four</div>
+    <div class="five">five</div>
+    <div class="six">six</div>
+</div>
+
+</body>
+</html>
